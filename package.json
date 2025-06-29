@@ -1,10 +1,13 @@
 {
+  "homepage": "https://juand0c.github.io/4try-deploy/",
   "name": "4try-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
